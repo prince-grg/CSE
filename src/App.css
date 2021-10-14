@@ -1,38 +1,196 @@
-.App {
-  text-align: center;
+body
+{
+    color: white;
+    background-image:url("./images/bg.jpg") ;
+    /* background-color: #4b3e47;; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Google Sans',Roboto,Arial,sans-serif;
+}
+li{
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 70px;
+    font-size: 1rem;
+    transition: 1s;
+}
+li:hover{
+    transform: scale(1.5);
+    color: coral;
+}
+a:hover{color: coral;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul{
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+}
+#d-name{
+    display: inline-block;
+}
+.containeer{
+    display: flex;
+
+    text-align: center;
+}
+span{
+    display: block;
+    font-size: 1.2rem;
+    letter-spacing:0.7;
+}
+.navBar{
+    padding:15px;
+}
+.line{
+    height: 0.5px;
+    background-color: violet;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Mid Section */
+.mid-section{
+    margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#hod_image{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 10%;
+}
+.mid-section h1{
+    display: inline-block;
+    position: relative;
+    width: 70%;
+    /* bottom: 120px; */
+    left: 80px;
+    top: 100px;
+
+}
+.mid-section h2{
+    position: relative;
+    /* left: 90%; */
+    right: 120px;
+    text-align: end;
+    bottom: 50px;
+}
+a{
+  text-decoration: none;
   color: white;
 }
+.flx-box{
+    margin-top: 100px;
+   display: flex;
+   flex-wrap: wrap;
+   padding-left:100px ;
+   
+}
+.flx-item{
+    display: inline-block;
+    width: 200px;
+    margin: 30px;
+}
+.sect-a{
+    text-align:center;
+    font-size: 80px;
+   text-transform: capitalize;
+text-shadow: 1px 1px #2a1d1d;
+ color: white;
+ 
+}
+.ab{
+    display: block;
+    height: 84%;
+    width: 100%;
+    position: relative;
+}
+.vision{
+    
+    width: 36%;
+    height: 65%;
+    background: #663030;
+    position: relative;
+    top: 30px;
+    left: 51px;
+    border-radius: 20px;
+    animation: right-left 1.5s;
 
-.App-link {
-  color: #61dafb;
+}
+.sect-b{
+    text-align: center;
+font-size: 24px;
+font-family: cursive;
+color: white;
+
+}
+.mission{
+   
+    width: 36%;
+    height: 105%;
+    background: #795548;
+    position: absolute;
+    top: 31%;
+    padding: 15px;
+    left: 60%;
+    border-radius: 20px;
+    animation: left-right 1.5s;
+}
+@keyframes left-right{
+    from{
+    left:120%;    
+    }
+    to{
+     left:60% ;
+    }
+}
+@keyframes right-left{
+    from{
+   left:-400px;   
+    }
+    to{
+     left:51px;
+    }
+}
+sect-c{
+    text-align: center;
+font-size: 17px;
+font-family: cursive;
+color: white;
+}
+.mission_a{
+    text-align: center;
+    font-size: 80px;
+    text-transform: capitalize;
+    text-shadow: 1px 1px #2a1d1d;
+    color: white;
+}
+.form-container{
+    width: 700px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 3%;
+    background-color:#795548;
+    color: white;
+    padding:30px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.quote{
+    animation: quotee 1s infinite alternate;
+}
+@keyframes quotee{
+    0%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.is-active{
+    border-bottom: 2px solid #663030;
+    color: aqua;
+}
+
+.flx-item:hover{
+    transition: 2s ease;
+    transform: scale(1.1);
 }
